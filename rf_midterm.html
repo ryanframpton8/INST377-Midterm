@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id = "heading"> Heading </h1>
+
+    <button onclick="generateColor()"> Change Color </button> 
+</body>
+
+
+<script>
+    function generateColor(){
+        let choices = ['blue', 'red', 'green', 'yellow', 'orange', 
+                        'purple', 'pink'];
+        let randomIndex = Math.floor(Math.random() * choices.length); 
+        let color = choices[randomIndex];
+
+        document.getElementById("heading").style.color = color;
+    }
+
+</script>
+
+</html>
